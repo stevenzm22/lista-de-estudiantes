@@ -1,5 +1,35 @@
-td,th{
-    border: 2px solid;
-    gap: 3px;
+
+
+
+#contenedorMayor {
+    display: grid;
+   grid-template-columns: 1fr 1fr;
     font-family: Arial, Helvetica, sans-serif;
+    gap: 5%;
+}
+
+.titulo{
+    text-align: center;
+}
+
+
+
+#mostrarsolicitudes{
+    background-color: rgb(100, 28, 85);
+
+}
+
+
+#agregarsolicitudes{
+    background-color: aqua;
+   
+}
+
+#formularioSolicitud{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+ text-align: center;
+  
+   
 }

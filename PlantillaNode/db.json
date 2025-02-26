@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "usuarios": [
     {
       "id": "2db4",
@@ -9,16 +8,25 @@
       "rol": "profesor"
     },
     {
-      "id": "c3a6",
-      "nombre": "emanuel",
-      "cedula": "999991",
-      "contraseña": "1111"
+      "id": "21ff",
+      "nombre": "juanito",
+      "cedula": "10833",
+      "contraseña": "234",
+      "rol": "estudiantes"
+    },
+    {
+      "id": "857a",
+      "nombre": "anastacia",
+      "cedula": "7777",
+      "contraseña": "3456",
+      "rol": "estudiantes"
+    },
+    {
+      "id": "3386",
+      "nombre": "paola",
+      "cedula": "5576",
+      "contraseña": "55555",
+      "rol": "estudiantes"
     }
   ]
 }
-=======
-    "usuarios": [
-      
-    ]
-  }
->>>>>>> 4772513173b588bcffcbc269910748953d309e22
