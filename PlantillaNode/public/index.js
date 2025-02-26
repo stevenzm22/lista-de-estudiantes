@@ -3,6 +3,7 @@ import { postUsers,getUsers,updateUsers,deleteUser } from "./service/llamados.js
 const nombreLogin=document.getElementById("nombreLogin")
 const contraseñaLogin=document.getElementById("contraseñaLogin")
 const botonLogin=document.getElementById("botonLogin")
+<<<<<<< HEAD
 const cedulalogin=document.getElementById("cedulalogin")
 
 botonLogin.addEventListener("click",function () {
@@ -33,3 +34,14 @@ botonLogin.addEventListener("click",function () {
     });
 
 }
+=======
+
+botonLogin.addEventListener("click",function () {
+
+  
+    
+    console.log(nombreLogin.value,contraseñaLogin.value);
+    
+})
+
+>>>>>>> 4772513173b588bcffcbc269910748953d309e22

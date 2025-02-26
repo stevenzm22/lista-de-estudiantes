@@ -23,12 +23,19 @@ export { getUsers };
 
 //////////LLAMADO POST//////////
 
+<<<<<<< HEAD
 async function postUsers(nombre,cedula,contraseña) {
+=======
+async function postUsers(nombre,contraseña) {
+>>>>>>> 4772513173b588bcffcbc269910748953d309e22
     try {
      
         const userData = { 
            nombre,
+<<<<<<< HEAD
            cedula,
+=======
+>>>>>>> 4772513173b588bcffcbc269910748953d309e22
            contraseña
         
         };
@@ -58,15 +65,25 @@ export{postUsers}
 //////////////LLAMADO UPDATE/////////////
 
 
+<<<<<<< HEAD
 async function updateUsers(nombre,cedula,contraseña,id) 
+=======
+async function updateUsers(producto,precio,cantidad,id) 
+>>>>>>> 4772513173b588bcffcbc269910748953d309e22
 {
     try {
      
         const userData = { 
+<<<<<<< HEAD
             nombre, 
             cedula,
             contraseña
             
+=======
+            producto, 
+            precio,
+            cantidad
+>>>>>>> 4772513173b588bcffcbc269910748953d309e22
         
         };
 

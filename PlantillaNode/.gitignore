@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 node_modules 
 AppData/
 OneDrive/
@@ -5,3 +6,6 @@ OneDrive/
 *.zip
 *.msi
 *.lnk 
+=======
+node_modules
+>>>>>>> 4772513173b588bcffcbc269910748953d309e22
