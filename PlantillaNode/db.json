@@ -1,0 +1,17 @@
+{
+  "usuarios": [
+    {
+      "id": "2db4",
+      "nombre": "steven",
+      "cedula": "61111",
+      "contraseña": "1234",
+      "rol": "profesor"
+    },
+    {
+      "id": "c3a6",
+      "nombre": "emanuel",
+      "cedula": "999991",
+      "contraseña": "1111"
+    }
+  ]
+}
