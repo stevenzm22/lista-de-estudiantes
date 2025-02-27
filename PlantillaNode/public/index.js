@@ -26,7 +26,7 @@ botonLogin.addEventListener("click",function () {
             window.location.href="http://localhost:3004/pagina.html"
             alert("profe")
         } else  if (element.nombre===nombreLogin.value && element.contraseña===contraseñaLogin.value && element.rol==="estudiantes") {
-             window.location.href=""
+             window.location.href="http://localhost:3004/paginaestudy.html"
             alert("es estudiante")
         }{
          

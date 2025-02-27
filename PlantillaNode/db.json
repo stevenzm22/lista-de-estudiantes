@@ -27,6 +27,56 @@
       "cedula": "5576",
       "contraseña": "55555",
       "rol": "estudiantes"
+    },
+    {
+      "id": "c06f",
+      "nombre": "",
+      "cedula": "",
+      "contraseña": "",
+      "rol": "estudiantes"
+    }
+  ],
+  "solicitudes": [
+    {
+      "id": "caab",
+      "nombre": "steven",
+      "solicitudes": "me dormi llego tarde",
+      "fecha": "2025-02-06"
+    },
+    {
+      "id": "f70d",
+      "nombre": "",
+      "solicitudes": "",
+      "hora": "",
+      "fecha": ""
+    },
+    {
+      "id": "a55a",
+      "nombre": "",
+      "solicitudes": "",
+      "hora": "15:56",
+      "fecha": ""
+    },
+    {
+      "id": "495a",
+      "nombre": "moises",
+      "solicitudes": "ocupado",
+      "hora": "08:49",
+      "fecha": "2025-02-15"
+    },
+    {
+      "id": "0239",
+      "nombre": "",
+      "solicitudes": "",
+      "hora": "",
+      "fecha": ""
+    },
+    {
+      "id": "5ddc",
+      "nombre": "",
+      "solicitudes": "",
+      "hora": "",
+      "fecha": ""
     }
   ]
 }
