@@ -32,3 +32,8 @@
     color: rgb(7, 7, 7);
 
 }
+
+body{
+    background-image: url(img/fondo\ de\ registro.jpg);
+    background-size: cover;
+}

@@ -32,8 +32,6 @@ async function postUsers(nombre,solicitudes,hora,fecha) {
            solicitudes,
            hora,
            fecha
-          
-        
         };
 
 
@@ -73,9 +71,6 @@ async function updateUsers(nombre,solicitudes,hora,fecha,id)
             solicitudes,
             hora,
             fecha
-            
-
-        
         };
 
 

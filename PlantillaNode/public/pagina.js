@@ -1,50 +1,60 @@
 import { postUsers,getUsers,updateUsers,deleteUser } from "./service/solicitudes.js"
-const nombreSolicitud=document.getElementById("nombreSolicitud")
-const solicitudTareas=document.getElementById("solicitudTareas")
-const horaTareas=document.getElementById("horaTareas")
-const fechaTareas=document.getElementById("fechaTareas")
-const agregarTareas=document.getElementById("agregarTareas")
+const tabla=document.getElementById("tabla")
 
-//div para tareas
-const divNombre=document.getElementById("divNombre")
-const divSolicitud=document.getElementById("divSolicitud")
-const divHora=document.getElementById("divHora")
-const divNdivFechaombre=document.getElementById("divFecha")
-
-
-agregarTareas.addEventListener("click", function () {
-    console.log(nombreSolicitud.value,solicitudTareas.value,fechaTareas.value);
-    postUsers(nombreSolicitud.value,solicitudTareas.value,horaTareas.value,fechaTareas.value)
-    mostrartareas()
-})
-
-    //mostrar las tareas 
- async function mostrartareas() {
-
+ async function mostarSolicitudes() {
     const datos = await getUsers()
 
     datos.forEach(element => {
-        
-        let MostarNombreTareas=document.createElement("p")
-        let mostarSoli=document.createElement("p")
-        let mostrarHora=document.createElement("p")
-        let mostrarfecha=document.createElement("p")
 
-       
 
-        //crear los contenido a las etiquetas
+        //creacion de etiquetas
+        let tr=document.createElement("tr")
+        let tdNombre=document.createElement("td")
+        let tdSolicitud=document.createElement("td")
+        let tdHora=document.createElement("td")
+        let tdFecha=document.createElement("td")
+        let inputEditar=document.createElement("input")
+            //creacion de contenedores
+        let tdEditar=document.createElement("td")
+        let tdEliminar=document.createElement("td")
 
-        MostarNombreTareas.innerText= element.nombre
-        mostarSoli.innerText= element.solicitudes
-        mostrarHora.innerText= element.hora
-        mostrarfecha.innerText = element.fecha 
+        //creacion de botones
+        let tdbtnEditar=document.createElement("button")
+        let tdbtnEliminar=document.createElement("button")
+                //nombre de los botones
+        tdbtnEditar.textContent="Editar"
+        tdbtnEliminar.textContent="Eliminar"
+            //los datos del db json
 
-       
+        tdNombre.innerText=element.nombre
+        tdSolicitud.innerText=element.solicitudes
+        tdHora.innerText=element.hora
+        tdFecha.innerText=element.fecha
 
-        
-   
 
+            inputEditar.setAttribute("id","editarTareas")
+            inputEditar.setAttribute("placeholder","Editar")
+
+            //se imprima en la consola
+            tdEditar.appendChild(inputEditar)
+        tdEditar.appendChild(tdbtnEditar)
+        tdEliminar.appendChild(tdbtnEliminar)
+
+
+        tr.appendChild(tdNombre)
+        tr.appendChild(tdSolicitud)
+        tr.appendChild(tdHora)
+        tr.appendChild(tdFecha)
+        tr.appendChild(tdEditar)
+        tr.appendChild(tdEliminar)
+
+        tabla.appendChild(tr)
     });
-
+    
 }
+
+mostarSolicitudes()
+
+
+
 

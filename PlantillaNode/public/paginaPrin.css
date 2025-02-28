@@ -1,26 +1,37 @@
-
-
-#contenedor{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 5%;
-}
-
-#contenedor1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.tabla{
+    border: 2px solid #fafafd;
+    
     text-align: center;
-    background-color: rgb(192, 193, 243);
+    margin: auto;
+
+
+
+}
+th{
+    border: 2px solid #eeeef3;
+    background-color: #0a2733;
+    color: aliceblue;
+    width:80px;
+    height: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    
+}
+td{
+    border: 2px solid #f8f4f4;
+    width: 280px;
+   
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(248, 243, 243, 0.986);
+    background-color: rgb(30, 14, 54);
+    
     
 }
 
-#contenedor2{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: rgb(157, 240, 212);
-    text-align: center;
-
+#editarTareas{
+    border-radius: 20px;
 }
 
 

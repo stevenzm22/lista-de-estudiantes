@@ -1,0 +1,19 @@
+#form{
+   color: aliceblue;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulos{
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aliceblue;
+}
+
+body{
+    background-image:url(img/fondo\ de\ formulario\ estudiantes.jpg) ;
+    background-size: cover;
+   
+  
+}
+

@@ -41,3 +41,10 @@
     color: rgb(11, 133, 240);
 }
 
+body{
+    background-image: url(img/fondo\ de\ login.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+

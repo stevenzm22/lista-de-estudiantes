@@ -23,10 +23,10 @@ botonLogin.addEventListener("click",function () {
     datos.forEach(element => {
          
         if (element.nombre===nombreLogin.value && element.contraseña===contraseñaLogin.value && element.rol==="profesor") {
-            window.location.href="http://localhost:3004/pagina.html"
+            window.location.href="http://localhost:3005/pagina.html"
             alert("profe")
         } else  if (element.nombre===nombreLogin.value && element.contraseña===contraseñaLogin.value && element.rol==="estudiantes") {
-             window.location.href="http://localhost:3004/paginaestudy.html"
+             window.location.href="paginaestudy.html"
             alert("es estudiante")
         }{
          
