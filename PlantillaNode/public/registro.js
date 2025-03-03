@@ -6,10 +6,25 @@ const cedulalogini=document.getElementById("cedulalogini")
 
 botonLogini.addEventListener("click",function () {
 
-  postUsers(nombreLogini.value,cedulalogini.value,contraseñaLogini.value,)
+  
+
+  if (!nombreLogini.value.trim() || !contraseñaLogini.value.trim() || !cedulalogini.value.trim()) {
+    alert("llene los datos")
     
-    console.log(nombreLogini.value,cedulalogini.value,contraseñaLogini.value);
-    window.location.href="http://localhost:3004/"
+  } else {
+    Swal.fire({
+      title: "datos registrado",
+      icon: "success",
+      draggable: true
+       
+    });
+    postUsers(nombreLogini.value,cedulalogini.value,contraseñaLogini.value,)
+    window.location.href="http://localhost:3005/"
+
+  }
+    
+ //   console.log(nombreLogini.value,cedulalogini.value,contraseñaLogini.value);
+ //   window.location.href="http://localhost:3004/"
    
     
 })

@@ -21,6 +21,10 @@ botonLogin.addEventListener("click",function () {
     const datos= await getUsers()
 
     datos.forEach(element => {
+
+        if (!nombreLogin.value.trim() || !contraseñaLogin.value.trim() || !cedulalogin.value.trim()) {
+            alert("ingrese los datos")
+        }
          
         if (element.nombre===nombreLogin.value && element.contraseña===contraseñaLogin.value && element.rol==="profesor") {
             window.location.href="http://localhost:3005/pagina.html"

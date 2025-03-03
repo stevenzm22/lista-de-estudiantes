@@ -1,4 +1,4 @@
-import { postUsers,getUsers,updateUsers,deleteUser } from "./service/solicitudes.js"
+import {postSolicitudes} from "./service/solicitudes.js"
 
 const inputNombre=document.getElementById("formGroupExampleInput")
 const inputSolicitud=document.getElementById("formGroupExampleInput2")
@@ -18,7 +18,12 @@ const agregarTAREAS=document.getElementById("agregarTAREAS")
 agregarTAREAS.addEventListener("click",function () {
 
   //  console.log(inputNombre.value,inputSolicitud.value,inputfecha.value);
-  postUsers(inputNombre.value,inputSolicitud.value,horageneral,inputfecha.value)
+  if (!inputNombre.value.trim() || !inputSolicitud.value.trim() || !inputfecha.value.trim()) {
+    alert("lleno los datos")
+  } else {
+    postSolicitudes(inputNombre.value,inputSolicitud.value,horageneral,inputfecha.value)
+  
+  }
   
  
 })

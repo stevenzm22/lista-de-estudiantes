@@ -1,4 +1,4 @@
-async function getUsers() {
+async function getSolicitudes() {
     try {
         const response = await fetch(' http://localhost:3000/solicitudes', {
             method: 'GET',
@@ -19,11 +19,11 @@ async function getUsers() {
     }
 }
 
-export { getUsers };
+export { getSolicitudes };
 
 //////////LLAMADO POST//////////
 
-async function postUsers(nombre,solicitudes,hora,fecha) {
+async function postSolicitudes(nombre,solicitudes,hora,fecha) {
 
     try {
      
@@ -54,23 +54,22 @@ async function postUsers(nombre,solicitudes,hora,fecha) {
     }
 }
 
-export{postUsers}
+export{postSolicitudes}
 
 //////////////LLAMADO UPDATE/////////////
 
 
 
-async function updateUsers(nombre,solicitudes,hora,fecha,id) 
+async function updateSolicitudes(solicitudes,id) 
 
 {
     try {
      
         const userData = { 
 
-            nombre, 
-            solicitudes,
-            hora,
-            fecha
+          
+            solicitudes
+            
         };
 
 
@@ -78,7 +77,7 @@ async function updateUsers(nombre,solicitudes,hora,fecha,id)
 
 
         const response = await fetch("http://localhost:3000/solicitudes/"+id, {
-            method: 'PUT',
+            method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json'
             },
@@ -93,14 +92,14 @@ async function updateUsers(nombre,solicitudes,hora,fecha,id)
     }
 }
 
-export{updateUsers}
+export{updateSolicitudes}
 
 
 
 //////////////LLAMADO DELETE/////////////
 
 
-async function deleteUser(id) {
+async function deleteSolicitudes(id) {
     try {
         const response = await fetch(`http://localhost:3000/solicitudes/${id}`, {
             method: 'DELETE',
@@ -120,4 +119,4 @@ async function deleteUser(id) {
     }
 }
 
-export { deleteUser };
+export { deleteSolicitudes };

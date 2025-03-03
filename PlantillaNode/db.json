@@ -22,27 +22,27 @@
       "rol": "estudiantes"
     },
     {
-      "id": "3386",
-      "nombre": "paola",
-      "cedula": "5576",
-      "contraseña": "55555",
+      "id": "1394",
+      "nombre": "samantha",
+      "cedula": "55555",
+      "contraseña": "2222",
       "rol": "estudiantes"
     }
   ],
   "solicitudes": [
     {
-      "id": "2d77",
-      "nombre": "steeven",
-      "solicitudes": "voy  al estadio",
-      "hora": "10:57:38",
-      "fecha": "2025-02-21"
+      "id": "135b",
+      "nombre": "jose",
+      "solicitudes": "no pude venir",
+      "hora": "11:11:39",
+      "fecha": "2025-03-15"
     },
     {
-      "id": "4f28",
-      "nombre": "angel",
-      "solicitudes": "no ire",
-      "hora": "11:28:54",
-      "fecha": "2025-02-02"
+      "id": "a3e1",
+      "nombre": "jose",
+      "solicitudes": "me dromi aniche ",
+      "hora": "11:11:48",
+      "fecha": "2025-03-26"
     }
   ]
 }

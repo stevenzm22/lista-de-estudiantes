@@ -1,8 +1,10 @@
-import { postUsers,getUsers,updateUsers,deleteUser } from "./service/solicitudes.js"
+import { postSolicitudes,getSolicitudes,updateSolicitudes,deleteSolicitudes } from "./service/solicitudes.js"
 const tabla=document.getElementById("tabla")
 
+
+
  async function mostarSolicitudes() {
-    const datos = await getUsers()
+    const datos = await getSolicitudes()
 
     datos.forEach(element => {
 
@@ -49,6 +51,26 @@ const tabla=document.getElementById("tabla")
         tr.appendChild(tdEliminar)
 
         tabla.appendChild(tr)
+
+        tdbtnEditar.addEventListener("click",function () {
+            console.log(element.id);
+          // pasa el id y el dato que quiero actualizar por parametros  
+          updateSolicitudes(inputEditar.value,element.id)
+            
+        })
+        
+       tdbtnEliminar.addEventListener("click", function () {
+
+         deleteSolicitudes(element.id)
+        
+          Swal.fire({
+            title: "Eliminado Correctamente!",
+            icon: "success",
+            draggable: true
+          });
+          location.reload()
+       })
+
     });
     
 }
